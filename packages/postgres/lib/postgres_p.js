@@ -2,7 +2,7 @@
  * @module postgres_p
  */
 
-var AWSXRay = require('aws-xray-sdk-core');
+var AWSXRay = require('@wmp-sbd/aws-xray-sdk-core');
 var SqlData = AWSXRay.database.SqlData;
 
 var DATABASE_VERS = process.env.POSTGRES_DATABASE_VERSION;

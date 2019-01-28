@@ -1,4 +1,4 @@
-var xray = require('aws-xray-sdk-core');
+var xray = require('@wmp-sbd/aws-xray-sdk-core');
 var assert = require('chai').assert;
 var chai = require('chai');
 var sinon = require('sinon');

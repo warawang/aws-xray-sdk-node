@@ -3,7 +3,7 @@ var chai = require('chai');
 var sinon = require('sinon');
 var sinonChai = require('sinon-chai');
 
-var AWSXRay = require('aws-xray-sdk-core');
+var AWSXRay = require('@wmp-sbd/aws-xray-sdk-core');
 
 var capturePostgres = require('../../lib/postgres_p');
 var Segment = AWSXRay.Segment;
