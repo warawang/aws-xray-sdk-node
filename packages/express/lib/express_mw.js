@@ -9,7 +9,7 @@
  * @module express_mw
  */
 
-var AWSXRay = require('aws-xray-sdk-core');
+var AWSXRay = require('@wmp-sbd/aws-xray-sdk-core');
 
 var mwUtils = AWSXRay.middleware;
 var IncomingRequestData = mwUtils.IncomingRequestData;
