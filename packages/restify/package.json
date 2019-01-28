@@ -1,6 +1,6 @@
 {
   "name": "@wmp-sbd/aws-xray-sdk-restify",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Enables AWS X-Ray for Restify (Javascript)",
   "author": "Amazon Web Services",
   "contributors": [
