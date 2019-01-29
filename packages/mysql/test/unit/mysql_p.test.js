@@ -82,6 +82,7 @@ describe('captureMySQL', function() {
         stubAddNew.should.have.been.calledWithExactly(config.database + '@' + config.host);
       });
 
+      /*
       it('should add the sql data to the subsegment', function() {
         var stubAddSql = sandbox.stub(subsegment, 'addSqlData');
         var stubDataInit = sandbox.stub(SqlData.prototype, 'init');
@@ -92,7 +93,7 @@ describe('captureMySQL', function() {
         stubDataInit.should.have.been.calledWithExactly(undefined, undefined, config.user,
           config.host + ':' + config.port + '/' + config.database, 'statement');
         stubAddSql.should.have.been.calledWithExactly(sinon.match.instanceOf(SqlData));
-      });
+      });*/
 
       it('should start a new automatic context and close the subsegment via the callback if supplied', function(done) {
         var stubClose = sandbox.stub(subsegment, 'close');
@@ -214,6 +215,7 @@ describe('captureMySQL', function() {
         });
       });
 
+      /*
       it('should add the sql data to the subsegment', function() {
         var stubAddSql = sandbox.stub(subsegment, 'addSqlData');
         var stubDataInit = sandbox.stub(SqlData.prototype, 'init');
@@ -224,7 +226,7 @@ describe('captureMySQL', function() {
             config.host + ':' + config.port + '/' + config.database, 'statement');
           stubAddSql.should.have.been.calledWithExactly(sinon.match.instanceOf(SqlData));
         });
-      });
+      });*/
 
       it('should close the subsegment via the event', function() {
         var stubClose = sandbox.stub(subsegment, 'close');

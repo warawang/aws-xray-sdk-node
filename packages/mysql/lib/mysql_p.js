@@ -158,8 +158,8 @@ function captureOperation(name) {
       command.on('error', errorCapturer);
     }
 
-    subsegment.addSqlData(createSqlData(config, command));
-    subsegment.namespace = 'remote';
+    subsegment.addMetadata('sql', command.sql);
+    subsegment.addMetadata('values', command.values);
 
     return command;
   }
